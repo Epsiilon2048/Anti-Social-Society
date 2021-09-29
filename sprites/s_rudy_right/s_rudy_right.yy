@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Rudy",
-    "path": "folders/Rudy.yy",
+    "path": "folders/Characters/Rudy.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_rudy_right",

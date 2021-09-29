@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Spooky",
-    "path": "folders/Spooky.yy",
+    "path": "folders/Characters/Spooky.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_spooky_back",

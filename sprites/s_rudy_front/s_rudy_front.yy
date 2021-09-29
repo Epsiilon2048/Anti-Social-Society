@@ -1,5 +1,5 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 7,
@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 28,
-  "bbox_top": 0,
+  "bbox_left": 8,
+  "bbox_right": 20,
+  "bbox_top": 54,
   "bbox_bottom": 54,
   "HTile": false,
   "VTile": false,
@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Rudy",
-    "path": "folders/Rudy.yy",
+    "path": "folders/Characters/Rudy.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_rudy_front",

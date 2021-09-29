@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "asstale",
-    "path": "asstale.yyp",
+    "name": "Rudy",
+    "path": "folders/Characters/Rudy.yy",
   },
   "resourceVersion": "1.0",
   "name": "mons_rudy",

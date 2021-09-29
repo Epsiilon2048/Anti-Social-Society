@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "asstale",
-    "path": "asstale.yyp",
+    "name": "Spooky",
+    "path": "folders/Characters/Spooky.yy",
   },
   "resourceVersion": "1.0",
   "name": "mons_spooky",
