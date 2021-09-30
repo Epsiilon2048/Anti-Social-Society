@@ -12,12 +12,12 @@ back_walk = asset_get_index(pre+"back_walk")
 left_walk = asset_get_index(pre+"left_walk")
 right_walk = asset_get_index(pre+"right_walk")
 
-if is_undefined(front)		front = s_rudy_front
-if is_undefined(back)		back = front
-if is_undefined(left)		left = front
-if is_undefined(right)		right = front
-if is_undefined(front_walk)	front_walk = front
-if is_undefined(back_walk)	back_walk = back
-if is_undefined(left_walk)	left_walk = left
-if is_undefined(right_walk)	right_walk = right
+if front == -1		front = s_rudy_front
+if back == -1		back = front
+if left == -1		left = front
+if right == -1		right = front
+if front_walk == -1	front_walk = front
+if back_walk == -1	back_walk = back
+if left_walk == -1	left_walk = left
+if right_walk == -1	right_walk = right
 }

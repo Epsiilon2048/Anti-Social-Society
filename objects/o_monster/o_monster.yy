@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_spooky_front",
+    "path": "sprites/s_spooky_front/s_spooky_front.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

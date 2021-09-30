@@ -1,9 +1,15 @@
 
-chara_move((button_right-button_left)*SPD, true)
-chara_move((button_down-button_up)*SPD, false)
+if not o_dialogue_box.enabled
+{
+	chara_move((button_right-button_left)*SPD, true)
+	chara_move((button_down-button_up)*SPD, false)
+	
+	o_camera.x = x
+	o_camera.y = y-sprite_get_height(chara.front)/2
+}
 
 
-if button_left or button_up or button_right or button_down
+if not o_dialogue_box.enabled and (button_left or button_up or button_right or button_down)
 {
 	walking = true
 	
@@ -36,5 +42,10 @@ if walking and frame_counter++ == FRAME_STEPS
 	frame_counter = 0
 }
 
+var interactive = instance_place(x, y, o_interactive)
+if button_interact and not o_dialogue_box.enabled_last and instance_exists(interactive)
+{
+	say(interactive.lines, interactive.sprite)
+}
 
 depth = -y
