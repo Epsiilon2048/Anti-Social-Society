@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Spooky",
-    "path": "folders/Characters/Spooky.yy",
+    "name": "Stand",
+    "path": "folders/Characters/Spooky/Stand.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_spooky_left",

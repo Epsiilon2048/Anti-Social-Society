@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Rudy",
-    "path": "folders/Characters/Rudy.yy",
+    "name": "Stand",
+    "path": "folders/Characters/Rudy/Stand.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_rudy_back",

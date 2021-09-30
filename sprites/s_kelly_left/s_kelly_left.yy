@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Kelly",
-    "path": "folders/Characters/Kelly.yy",
+    "name": "Stand",
+    "path": "folders/Characters/Kelly/Stand.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_kelly_left",
