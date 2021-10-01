@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_marbles_front",
+    "path": "sprites/s_marbles_front/s_marbles_front.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": true,
-  "parentObjectId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "o_monster",
+    "path": "objects/o_monster/o_monster.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,11 +29,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Marbles",
+    "path": "folders/Characters/Marbles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_camera",
+  "name": "mons_marbles",
   "tags": [],
   "resourceType": "GMObject",
 }

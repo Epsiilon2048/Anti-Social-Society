@@ -1,0 +1,2 @@
+
+destroy_self_if_other_exists

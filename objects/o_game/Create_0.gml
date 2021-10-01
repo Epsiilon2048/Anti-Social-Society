@@ -2,6 +2,9 @@
 #macro tile_collision layer_tilemap_get_id("Collision")
 #macro tile_width tilemap_get_tile_width(tile_collision)
 #macro window_scale window_get_width()/320
+#macro destroy_self_if_other_exists if destroy_if_other_exists() exit
+
+destroy_self_if_other_exists
 
 var scale = 1 + (display_get_height() >= 480) + (display_get_height() >= 720) + (display_get_height() >= 1920)
 
@@ -15,5 +18,10 @@ rudy = new Character("rudy")
 spooky = new Character("spooky")
 kelly = new Character("kelly")
 toxy = new Character("toxy")
+rem = new Character("rem")
+marbles = new Character("marbles")
+vink = new Character("vink")
+seapunk = new Character("seapunk")
+snurk = new Character("snurk")
 
 draw_interactive_boxes = true

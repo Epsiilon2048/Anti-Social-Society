@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_interactive_box",
-    "path": "sprites/s_interactive_box/s_interactive_box.yy",
+    "name": "s_interactive",
+    "path": "sprites/s_interactive/s_interactive.yy",
   },
   "solid": false,
   "visible": true,

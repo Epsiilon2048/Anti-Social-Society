@@ -2,6 +2,8 @@
 #macro dialogue_line_length 23
 #macro dialogue_line_sprite_length 31
 
+destroy_self_if_other_exists
+
 enabled = false
 enabled_last = false
 
