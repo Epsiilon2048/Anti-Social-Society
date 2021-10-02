@@ -7,10 +7,6 @@ states.stand = function(){
 	sprite_index = chara.front
 }
 	
-states.talk = function(){
-	sprite_index = chara.front
-}
-	
 states.look_at_chara = function(){
 	var dir = round(point_direction(x, y, o_chara.x, o_chara.y)/360*4)
 
@@ -30,5 +26,7 @@ states.look_at_chara = function(){
 	break
 	}	
 }
+
+states.talk = look_at_chara
 
 state = states.look_at_chara
