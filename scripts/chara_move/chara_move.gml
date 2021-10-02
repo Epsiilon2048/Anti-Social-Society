@@ -14,4 +14,6 @@ while
 	if is_horizontal	x += inc
 	else				y += inc
 }
+
+return i <= abs(dist)
 }
