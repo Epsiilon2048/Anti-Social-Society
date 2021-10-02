@@ -14,6 +14,7 @@ window_resize(scale)
 window_set_position(display_get_width()/2-width/2, display_get_height()/2-height/2)
 game_set_speed(30, gamespeed_fps)
 
+chara = new Character("chara")
 rudy = new Character("rudy")
 spooky = new Character("spooky")
 kelly = new Character("kelly")
@@ -23,5 +24,8 @@ marbles = new Character("marbles")
 vink = new Character("vink")
 seapunk = new Character("seapunk")
 snurk = new Character("snurk")
+ari = new Character("ari")
 
 draw_interactive_boxes = true
+
+master_state = undefined

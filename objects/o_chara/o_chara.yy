@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_rudy_front",
-    "path": "sprites/s_rudy_front/s_rudy_front.yy",
+    "name": "s_chara_front",
+    "path": "sprites/s_chara_front/s_chara_front.yy",
   },
   "solid": false,
   "visible": true,
