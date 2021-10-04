@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "s_rudy_front",
-    "path": "sprites/s_rudy_front/s_rudy_front.yy",
+    "name": "s_chara_back",
+    "path": "sprites/s_chara_back/s_chara_back.yy",
   },
   "persistent": false,
   "parentObjectId": null,

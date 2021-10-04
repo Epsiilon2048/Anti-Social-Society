@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Characters",
-    "path": "folders/Characters.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "initialize_characters",
+  "name": "direction_name",
   "tags": [],
   "resourceType": "GMScript",
 }

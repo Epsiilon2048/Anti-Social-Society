@@ -8,8 +8,8 @@ var i = 0
 
 while
 	i++ <= abs(dist) and
-	not (is_horizontal ? colliding_at_pixel((inc == 1) ? bbox_right+1 : bbox_left-1, bbox_bottom) :
-	(colliding_at_pixel(bbox_left, bbox_bottom+inc) or colliding_at_pixel(bbox_right, bbox_bottom+inc)))
+	not (is_horizontal ? (colliding_at_pixel((inc == 1) ? bbox_right+1 : bbox_left-1, bbox_bottom) or colliding_at_pixel((inc == 1) ? bbox_right+1 : bbox_left-1, bbox_top)) :
+	(colliding_at_pixel(bbox_left, (inc == 1) ? bbox_bottom+1 : bbox_top-1) or colliding_at_pixel(bbox_right, (inc == 1) ? bbox_bottom+1 : bbox_top-1)))
 {
 	if is_horizontal	x += inc
 	else				y += inc

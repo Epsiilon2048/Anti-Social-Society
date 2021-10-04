@@ -7,9 +7,13 @@ FRAME_STEPS = 5
 SPIN_STEPS = 7
 PACE_SPD = 2
 
+collision = false
+
 frame_counter = 0
 
 pace_direction = 1
+
+mask_index = s_chara_back
 
 states = {}
 	
@@ -18,15 +22,7 @@ states.stand = function(){
 }
 	
 states.look_at_chara = function(){
-	var dir = round(point_direction(x, y, o_chara.x, o_chara.y)/360*4)
-
-	switch dir
-	{
-	default /*1 or 4*/:	sprite_index = chara.right break
-	case 1:				sprite_index = chara.back break
-	case 2:				sprite_index = chara.left break
-	case 3:				sprite_index = chara.front break
-	}	
+	sprite_index = chara[$ direction_name(point_direction(x, y, o_chara.x, o_chara.y))]
 }
 
 
@@ -71,7 +67,10 @@ states.pace = function(){
 		{
 			switch sprite_index
 			{
-			default:				sprite_index = chara.front_walk break
+			default:				
+				sprite_index = chara.front_walk 
+				image_index ++
+				break
 			case chara.back_walk:	sprite_index = chara.right break
 			case chara.right:		sprite_index = chara.front_walk break
 			}

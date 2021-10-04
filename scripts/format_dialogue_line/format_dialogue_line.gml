@@ -3,8 +3,6 @@ function format_dialogue_line(text, has_sprite){
 draw_set_font(fnt_dialogue)
 	
 text = string_replace_all(text, " ", "  ")
-text = string_replace_all(text, ",  ", ",   ")
-text = string_replace_all(text, ".  ", ".   ")
 
 var line_length = has_sprite ? dialogue_line_sprite_length : dialogue_line_length
 var newtext = ""
@@ -52,6 +50,12 @@ for(var i = 1; i <= string_length(text); i++)
 		newtext += "' "
 		current_ln += string_width(" ")/alpha_char_width
 		current_ln_letters ++
+	}
+	else if string_pos(char, ".,!?") and char_next == " "
+	{
+		newtext += char+"  "
+		current_ln += string_width("  ")/alpha_char_width
+		current_ln_letters += 2
 	}
 	else newtext += char
 	

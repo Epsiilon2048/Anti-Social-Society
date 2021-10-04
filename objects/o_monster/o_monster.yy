@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "s_chara_back",
+    "path": "sprites/s_chara_back/s_chara_back.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

@@ -1,5 +1,5 @@
 
-chara = global.characters.rudy
+chara = global.characters.chara
 
 SPD = 2
 
@@ -16,6 +16,8 @@ button_left = false
 button_up = false
 button_right = false
 button_down = false
+
+moved = false
 
 init = true
 
