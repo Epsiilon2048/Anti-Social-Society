@@ -8,7 +8,7 @@ if instance_number(self) > 1 {instance_destroy() exit}
 enabled = false
 enabled_last = false
 
-CHARS_PER_STEP = 2
+CHARS_PER_STEP = 1
 CHAR_SPEED_STEPS = 1
 
 text = ""

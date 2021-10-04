@@ -15,7 +15,7 @@ if enabled
 
 	// Text
 	var text_x = (sprite_exists(sprite) ? 104 : 46)*sc
-	var text_y = 173*sc
+	var text_y = 171*sc
 	
 	draw_set_color(c_white)
 	draw_set_font(fnt_dialogue)
