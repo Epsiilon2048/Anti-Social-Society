@@ -1,5 +1,5 @@
 
-chara = o_game.chara
+chara = o_game.rudy
 
 SPD = 2
 

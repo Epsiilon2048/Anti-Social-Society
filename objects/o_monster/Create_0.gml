@@ -22,41 +22,26 @@ states.look_at_chara = function(){
 
 	switch dir
 	{
-	default: // 0 or 4
-		sprite_index = chara.right
-	break
-	case 1:
-		sprite_index = chara.back
-	break
-	case 2:
-		sprite_index = chara.left
-	break
-	case 3:
-		sprite_index = chara.front
-	break
+	default /*1 or 4*/:	sprite_index = chara.right break
+	case 1:				sprite_index = chara.back break
+	case 2:				sprite_index = chara.left break
+	case 3:				sprite_index = chara.front break
 	}	
 }
 
 
-states.talk = look_at_chara
+states.talk = states.look_at_chara
 
 states.spinright = function(){
 	frame_counter ++
 	
 	if (frame_counter mod SPIN_STEPS) == 0 switch sprite_index
 	{
-	case chara.front:
-		sprite_index = chara.right
-	break
-	case chara.right:
-		sprite_index = chara.back
-	break
-	case chara.back:
-		sprite_index = chara.left
-	break
-	case chara.left:
-		sprite_index = chara.front
-	break
+	default:			sprite_index = chara.front break
+	case chara.front:	sprite_index = chara.right break
+	case chara.right:	sprite_index = chara.back break
+	case chara.back:	sprite_index = chara.left break
+	case chara.left:	sprite_index = chara.front break
 	}	
 }
 
@@ -65,18 +50,11 @@ states.spinleft = function(){
 	
 	if (frame_counter mod SPIN_STEPS) == 0 switch sprite_index
 	{
-	case chara.front:
-		sprite_index = chara.left
-	break
-	case chara.left:
-		sprite_index = chara.back
-	break
-	case chara.back:
-		sprite_index = chara.right
-	break
-	case chara.right:
-		sprite_index = chara.front
-	break
+	default:			sprite_index = chara.front break
+	case chara.front:	sprite_index = chara.left break
+	case chara.left:	sprite_index = chara.back break
+	case chara.back:	sprite_index = chara.right break
+	case chara.right:	sprite_index = chara.front break
 	}	
 }
 
