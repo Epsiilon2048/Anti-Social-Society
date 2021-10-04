@@ -1,3 +1,3 @@
 
 event_inherited()
-chara = o_game.seapunk
+chara = global.characters.seapunk

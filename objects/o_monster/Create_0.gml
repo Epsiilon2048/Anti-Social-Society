@@ -1,7 +1,7 @@
 
 #macro walk_speed 2
 
-chara = o_game.rudy
+chara = global.characters.rudy
 
 FRAME_STEPS = 5
 SPIN_STEPS = 7

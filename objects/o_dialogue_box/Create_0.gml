@@ -1,8 +1,9 @@
 
-#macro dialogue_line_length 23
+#macro dialogue_line_length 29
 #macro dialogue_line_sprite_length 31
+#macro alpha_char_width 8
 
-destroy_self_if_other_exists
+if instance_number(self) > 1 {instance_destroy() exit}
 
 enabled = false
 enabled_last = false

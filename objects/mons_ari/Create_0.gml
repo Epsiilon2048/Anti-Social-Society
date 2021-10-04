@@ -1,3 +1,3 @@
 
 event_inherited()
-chara = o_game.ari
+chara = global.characters.ari

@@ -1,2 +1,2 @@
 
-destroy_self_if_other_exists
+if instance_number(self) > 1 {instance_destroy() exit}

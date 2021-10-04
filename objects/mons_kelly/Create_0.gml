@@ -1,3 +1,3 @@
 
 event_inherited()
-chara = o_game.kelly
+chara = global.characters.kelly

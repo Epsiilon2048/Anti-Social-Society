@@ -1,3 +1,3 @@
 
-lines = [["This is default dialogue and it should prooobably be changed lol"]]
+lines = [["Oh no!! This is default dialogue!! It should probably be added to the game."]]
 sprite = -1

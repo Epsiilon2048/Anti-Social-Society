@@ -2,9 +2,8 @@
 #macro tile_collision layer_tilemap_get_id("Collision")
 #macro tile_width tilemap_get_tile_width(tile_collision)
 #macro window_scale window_get_width()/320
-#macro destroy_self_if_other_exists if destroy_if_other_exists() exit
 
-destroy_self_if_other_exists
+if instance_number(self) > 1 {instance_destroy() exit}
 
 var scale = 1 + (display_get_height() >= 480) + (display_get_height() >= 720) + (display_get_height() >= 1920)
 

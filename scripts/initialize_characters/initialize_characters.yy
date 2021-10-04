@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "destroy_if_other_exists",
+  "name": "initialize_characters",
   "tags": [],
   "resourceType": "GMScript",
 }
