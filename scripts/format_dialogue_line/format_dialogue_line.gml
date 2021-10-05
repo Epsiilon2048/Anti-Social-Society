@@ -12,6 +12,9 @@ var newlines = 0
 var char = ""
 var char_next = string_char_at(text, 1)
 
+var newline_1 = false
+var newline_2 = false
+
 for(var i = 1; i <= string_length(text); i++)
 {
 	var char_prev = char
@@ -39,6 +42,9 @@ for(var i = 1; i <= string_length(text); i++)
 	{
 		current_ln = 0
 		newlines ++
+		
+		if newlines == 1 newline_1 = true
+		else if newlines == 2 newline_2 = true
 	}
 	
 	if char == "'" and string_lettersdigits(char_next) != ""
@@ -73,5 +79,5 @@ for(var i = 1; i <= string_length(text); i++)
 
 if newlines > 2 show_debug_message("Dialogue exceeds max height!")
 
-return newtext
+return {text: newtext, newline_1: newline_1, newline_2: newline_2}
 }

@@ -4,6 +4,8 @@ timer = 0
 line_index = 0
 text_charindex = 1
 text = ""
+dot_text = "*"
+newlines = 0
 
 if is_undefined(lines) return undefined
 
@@ -18,7 +20,7 @@ for(var i = 0; i <= array_length(lines)-1; i++)
 {
 	lines[i] = format_dialogue_line(lines[i], sprite_exists(sprite))
 	
-	if lines[i] != "" has_content = true
+	if lines[i].text != "" has_content = true
 }
 
 if not has_content return undefined

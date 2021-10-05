@@ -27,7 +27,7 @@ if enabled
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_top)
 	draw_text_ext_transformed(text_x, text_y, text, 9+alpha_char_height, 999, sc, sc, 0)
-	draw_text_ext_transformed(text_x-16*sc, text_y, "*", 9+alpha_char_height, 999, sc, sc, 0)
+	draw_text_ext_transformed(text_x-16*sc, text_y, dot_text, 9+alpha_char_height, 999, sc, sc, 0)
 
 	// Sprite
 	if sprite_exists(sprite)

@@ -18,6 +18,11 @@ timer = 0
 
 text = ""
 text_charindex = 1
+dot_text = ""
+
+newlines = 0
+newline_1 = false
+newline_2 = false
 
 line_queue = []
 line_index = 0
