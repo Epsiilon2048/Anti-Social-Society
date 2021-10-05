@@ -3,7 +3,12 @@
 
 chara = global.characters.rudy
 
-FRAME_STEPS = 5
+line_index = 0
+lines = ""
+repeat_lines = ""
+sprite = -1
+
+FRAME_STEPS = 7
 SPIN_STEPS = 7
 PACE_SPD = 2
 
@@ -29,28 +34,20 @@ states.look_at_chara = function(){
 states.talk = states.look_at_chara
 
 states.spinright = function(){
-	frame_counter ++
 	
-	if (frame_counter mod SPIN_STEPS) == 0 switch sprite_index
+	if (frame_counter++ >= SPIN_STEPS)
 	{
-	default:			sprite_index = chara.front break
-	case chara.front:	sprite_index = chara.right break
-	case chara.right:	sprite_index = chara.back break
-	case chara.back:	sprite_index = chara.left break
-	case chara.left:	sprite_index = chara.front break
+		frame_counter = 0
+		sprite_index = chara[$ turned_left(sprite_get_direction(sprite_index))]
 	}	
 }
 
 states.spinleft = function(){
-	frame_counter ++
 	
-	if (frame_counter mod SPIN_STEPS) == 0 switch sprite_index
+	if (frame_counter++ >= SPIN_STEPS)
 	{
-	default:			sprite_index = chara.front break
-	case chara.front:	sprite_index = chara.left break
-	case chara.left:	sprite_index = chara.back break
-	case chara.back:	sprite_index = chara.right break
-	case chara.right:	sprite_index = chara.front break
+		frame_counter = 0
+		sprite_index = chara[$ turned_right(sprite_get_direction(sprite_index))]
 	}	
 }
 
@@ -65,24 +62,13 @@ states.pace = function(){
 	
 		if pace_direction == 1 and sprite_index != chara.front_walk
 		{
-			switch sprite_index
-			{
-			default:				
-				sprite_index = chara.front_walk 
-				image_index ++
-				break
-			case chara.back_walk:	sprite_index = chara.right break
-			case chara.right:		sprite_index = chara.front_walk break
-			}
+			sprite_index = chara[$ turned_left(sprite_get_direction(sprite_index))]
+			if sprite_index == chara.front sprite_index = chara.front_walk
 		}
 		if pace_direction == -1 and sprite_index != chara.back_walk
 		{
-			switch sprite_index
-			{
-			default:				sprite_index = chara.back_walk break
-			case chara.front_walk:	sprite_index = chara.left break
-			case chara.left:		sprite_index = chara.back_walk break
-			}
+			sprite_index = chara[$ turned_left(sprite_get_direction(sprite_index))]
+			if sprite_index == chara.back sprite_index = chara.back_walk
 		}
 	
 		image_speed = 0

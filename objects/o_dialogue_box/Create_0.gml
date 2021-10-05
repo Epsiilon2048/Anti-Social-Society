@@ -13,7 +13,6 @@ enabled_last = false
 
 sep = 9
 
-CHARSKIP_SPD = 3
 char_delay = 0
 timer = 0
 
