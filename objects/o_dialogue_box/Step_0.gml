@@ -37,12 +37,15 @@ if enabled and array_length(line_queue) != 0 and line_index < array_length(line_
 			text += char
 			text_charindex ++
 		
-			if char == " " and char_next == " " and not string_pos(char_prev, ".!?") char_delay = 0
-			else if string_pos(char, ".!?") char_delay = 0
+			if	(char == " " and char_next == " " and not string_pos(char_prev, ".!?")) or
+				(string_lettersdigits(char) != "") or
+				(string_pos(char, ".!?-"))
+			{
+				char_delay = 0
+			}
 			else if char == "," and char_next == " " char_delay = 5
-			else if string_lettersdigits(char) != "" char_delay = 0
 		}
-		if added_text audio_play_sound(snd_text, 0, 0)
+		if added_text audio_play_sound(voice, 0, 0)
 	
 		timer = char_delay
 	}
@@ -58,5 +61,7 @@ if box_finished and (button_next or button_skip)
 	if ++line_index >= array_length(line_queue)
 	{
 		enabled = false
+		monster_talking = noone
 	}
+	else if button_skip text = line_queue[line_index]
 }

@@ -20,4 +20,8 @@ if front_walk == -1	front_walk = front
 if back_walk == -1	back_walk = back
 if left_walk == -1	left_walk = left
 if right_walk == -1	right_walk = right
+
+talk = asset_get_index(pre+"talk")
+voice = asset_get_index("snd_"+name+"_voice")
+if voice == -1 voice = snd_text
 }

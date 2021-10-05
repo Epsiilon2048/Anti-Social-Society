@@ -28,3 +28,6 @@ ari = new Character("ari")
 draw_interactive_boxes = true
 
 master_state = undefined
+
+last_room = room_init
+room_goto(room_start)

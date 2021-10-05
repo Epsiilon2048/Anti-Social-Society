@@ -1,4 +1,6 @@
 
+if instance_number(self) > 1 {instance_destroy() exit}
+
 chara = global.characters.chara
 
 SPD = 2

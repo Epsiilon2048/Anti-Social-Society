@@ -11,4 +11,5 @@ global.characters = {} with global.characters {
 	seapunk = new Character("seapunk")
 	snurk = new Character("snurk")
 	ari = new Character("ari")
+	tekk = new Character("tekk")
 }

@@ -1,5 +1,10 @@
 
 if instance_place(x, y, o_chara)
 {
-	func()
+	if not chara_in
+	{
+		chara_in = true
+		func()
+	}
 }
+else if chara_in chara_in = false

@@ -1,4 +1,6 @@
 
+if o_fade.fading != 0 exit
+
 spd = SPD
 
 if not o_dialogue_box.enabled
@@ -68,7 +70,7 @@ switch sprite_get_direction(sprite_index)
 	break
 	case "back":
 		ip_x = x
-		ip_y = y-sprite_height/2
+		ip_y = bbox_top-1
 	break
 	case "left":
 		ip_x = bbox_left-1
@@ -79,11 +81,11 @@ switch sprite_get_direction(sprite_index)
 		ip_y = bbox_top
 }
 
-var interactive = instance_position(ip_x, ip_y, o_interactive)
-if not instance_exists(interactive) interactive = instance_position(ip_x, ip_y, o_monster)
+var interactive = instance_place(ip_x, ip_y, o_interactive)
+if not instance_exists(interactive) interactive = instance_place(x, y, o_monster)
 if button_interact and not o_dialogue_box.enabled_last and instance_exists(interactive)
 {
-	say(get_lines(interactive), interactive.sprite)
+	say(get_lines(interactive), interactive.sprite, interactive.voice, interactive)
 }
 
 depth = -y

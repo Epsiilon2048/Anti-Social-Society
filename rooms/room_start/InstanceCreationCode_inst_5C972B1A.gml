@@ -1,2 +1,3 @@
 
-repeat_lines = [["FUCK YOU!!!!!"], ["YOU WHORE!!","YOU GAME MAKING-WHORE!!!"]]
+lines = [["spooky?                \ni hardly know -y!!"],["hehehehehehe"]]
+repeat_lines = "like my joke, epsii?"

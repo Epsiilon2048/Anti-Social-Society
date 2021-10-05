@@ -1,6 +1,6 @@
 
 #macro dialogue_line_length 29
-#macro dialogue_line_sprite_length 31
+#macro dialogue_line_sprite_length 22
 #macro alpha_char_width 8
 #macro alpha_char_height 10
 
@@ -25,7 +25,10 @@ line_index = 0
 box_finished = false
 
 sprite = -1
+voice = snd_text
 
 button_next = false
 button_charskip = false
 button_skip = false
+
+monster_talking = noone

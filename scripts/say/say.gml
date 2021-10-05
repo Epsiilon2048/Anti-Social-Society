@@ -1,4 +1,4 @@
-function say(lines, sprite){ with o_dialogue_box {
+function say(lines, sprite, voice, monster){ with o_dialogue_box {
 
 timer = 0
 line_index = 0
@@ -23,7 +23,12 @@ for(var i = 0; i <= array_length(lines)-1; i++)
 
 if not has_content return undefined
 
+if is_undefined(voice) voice = snd_text
+if is_undefined(monster) monster = noone
+
 enabled = true
 line_queue = lines
 self.sprite = sprite
+monster_talking = monster
+self.voice = voice
 }}

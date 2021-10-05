@@ -2,11 +2,12 @@
 #macro walk_speed 2
 
 chara = global.characters.rudy
+voice = chara.voice
+sprite = chara.talk
 
 line_index = 0
-lines = ""
+lines = []
 repeat_lines = ""
-sprite = -1
 
 FRAME_STEPS = 7
 SPIN_STEPS = 7
@@ -81,4 +82,4 @@ states.pace = function(){
 	}
 }
 
-state = states.look_at_chara
+state = states.stand
