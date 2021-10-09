@@ -31,8 +31,9 @@ states.look_at_chara = function(){
 	sprite_index = chara[$ direction_name(point_direction(x, y, o_chara.x, o_chara.y))]
 }
 
-
-states.talk = states.look_at_chara
+states.talk = function(){
+	sprite_index = chara[$ turned_opposite(direction_name(point_direction(x, y, o_chara.x, o_chara.y)))]
+}
 
 states.spinright = function(){
 	
