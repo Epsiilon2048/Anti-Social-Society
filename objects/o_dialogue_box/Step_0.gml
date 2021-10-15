@@ -15,7 +15,7 @@ if enabled and array_length(line_queue) != 0 and line_index < array_length(line_
 		newline_1 = line_queue[line_index].newline_1
 		newline_2 = line_queue[line_index].newline_2
 	
-		var char_prev = ""
+		var char_prev = string_char_at(_text, text_charindex-1)
 		var char = ""
 		var char_next = string_char_at(_text, text_charindex)
 		char_delay = undefined
@@ -24,7 +24,6 @@ if enabled and array_length(line_queue) != 0 and line_index < array_length(line_
 	
 		while is_undefined(char_delay)
 		{
-			char_prev = char
 			char = char_next
 			char_next = string_char_at(_text, text_charindex+1)
 			
@@ -46,9 +45,16 @@ if enabled and array_length(line_queue) != 0 and line_index < array_length(line_
 				char_delay = 0
 			}
 			else if char == "," and char_next == " " char_delay = 5
-			else if char == "\n" and (newlines == 0 and newline_1) or (newlines == 1 and newline_2)
+			else if char == "\n" and ((newlines == 0 and newline_1) or (newlines == 1 and newline_2))
 			{
 				char_delay = 5
+			}
+			
+			if char == "\n"
+			{
+				show_debug_message(stitch(
+					random(1),"   (AST = ",char_delay==5,")   ","newlines ",newlines,"   newline_1 ",newline_1,"   newline_2 ",newline_2
+				))
 			}
 			
 			if char_prev == "\n"
@@ -64,6 +70,8 @@ if enabled and array_length(line_queue) != 0 and line_index < array_length(line_
 		if added_text audio_play_sound(voice, 0, 0)
 	
 		timer = char_delay
+		
+		char_prev = char
 	}
 }
 
