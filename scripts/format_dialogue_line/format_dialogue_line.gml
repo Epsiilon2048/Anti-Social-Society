@@ -8,6 +8,9 @@ else meta = struct_add(struct_add(new dialogue_line(), character_meta), meta)
 meta.text = string_replace_all(meta.text, " ", "  ")
 
 draw_set_font(fnt_dialogue)
+//static spw = string_width(" ")/alpha_char_width
+	
+//text = string_replace_all(text, " ", "  ")
 
 var line_length = (not sprite_exists(sprite)) ? dialogue_line_sprite_length : dialogue_line_length
 var newtext = ""
@@ -52,30 +55,10 @@ for(var i = 1; i <= string_length(meta.text); i++)
 		else if newlines == 2 newline_2 = true
 	}
 	
-	if char == "'" and string_lettersdigits(char_next) != ""
+	if string_pos(char, ".,'(")
 	{
-		newtext += "' "
-		current_ln += string_width(" ")/alpha_char_width
-	}
-	else if char == "."
-	{
-		newtext += ". "
-		current_ln += string_width("  ")/alpha_char_width
-	}
-	else if char == "("
-	{
-		newtext += "( "
-		current_ln += string_width("  ")/alpha_char_width
-	}
-	else if char == ")"
-	{
-		newtext += " )"
-		current_ln += string_width("  ")/alpha_char_width
-	}
-	else if string_pos(char, ",!?") and char_next == " "
-	{
-		newtext += char+"  "
-		current_ln += string_width("  ")/alpha_char_width
+		newtext += char+" "
+		current_ln += spw
 	}
 	else newtext += char
 	
