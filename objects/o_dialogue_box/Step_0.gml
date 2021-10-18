@@ -73,7 +73,7 @@ if enabled and array_length(line_queue) != 0 and line_index < array_length(line_
 			
 			char_prev = char
 		}
-		if added_text audio_play_sound(voice, 0, 0)
+		if added_text and voice != -1 audio_play_sound(voice, 0, 0)
 	
 		timer = char_delay
 	}

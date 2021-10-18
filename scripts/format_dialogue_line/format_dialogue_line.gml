@@ -1,18 +1,16 @@
 function format_dialogue_line(text_meta, character_meta){
 
+if not is_struct(text_meta) text_meta = {text: text_meta}
 if is_undefined(character_meta) character_meta = {}
 
-if not is_struct(text_meta) meta = line_meta_identity()
-else meta = struct_add(struct_add(new dialogue_line(), character_meta), meta)
-	
-meta.text = string_replace_all(meta.text, " ", "  ")
+var meta = new dialogue_line()
+struct_add(meta, character_meta)
+struct_add(meta, text_meta)
 
 draw_set_font(fnt_dialogue)
-//static spw = string_width(" ")/alpha_char_width
-	
-//text = string_replace_all(text, " ", "  ")
+static spw = string_width(" ")/alpha_char_width
 
-var line_length = (not sprite_exists(sprite)) ? dialogue_line_sprite_length : dialogue_line_length
+var line_length = sprite_exists(sprite) ? dialogue_line_sprite_length : dialogue_line_length
 var newtext = ""
 var current_ln = 0
 var newlines = 0
@@ -50,12 +48,12 @@ for(var i = 1; i <= string_length(meta.text); i++)
 	{
 		current_ln = 0
 		newlines ++
-		
+
 		if newlines == 1 newline_1 = true
 		else if newlines == 2 newline_2 = true
 	}
 	
-	if string_pos(char, ".,'(")
+	if string_pos(char, " .,'(")
 	{
 		newtext += char+" "
 		current_ln += spw
@@ -67,6 +65,8 @@ for(var i = 1; i <= string_length(meta.text); i++)
 
 if newlines > 2 show_debug_message("Dialogue exceeds max height!")
 
+show_debug_message(text_meta)
+meta.text = newtext
 meta.newline_1 = newline_1
 meta.newline_2 = newline_2
 

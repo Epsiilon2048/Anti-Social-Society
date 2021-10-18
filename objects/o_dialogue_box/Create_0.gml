@@ -20,7 +20,7 @@ text = ""
 text_charindex = 1
 dot_text = ""
 
-meta = {text: "", newline_1: false, newline_2: false, delay: 0, sprite: -1, voice: snd_text, goto_next: false}
+meta = new dialogue_line()
 
 newlines = 0
 newline_1 = false
