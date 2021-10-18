@@ -1,10 +1,6 @@
 
-lines = [
-	[
-		"What is this, it looks very familliar... hmm..\ncouch",
-		"What is that...?",
-		"OH       it's a couch",
-	],
+repeat_lines = [
+	["Help!\nI'm being attacked!", "Help!\nI'm being attacked!\nWhy!!", "Help! I'm being attacked! sdf asdf asdf asdfasdfadsf ads\nWhy!!"]
 ]
 
-repeat_lines = "Someone should probably add a sprite for that....."
+lines = repeat_lines
