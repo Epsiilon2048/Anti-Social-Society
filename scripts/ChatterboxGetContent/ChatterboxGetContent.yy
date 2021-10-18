@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Getters",
-    "path": "folders/Chatterbox/Getters.yy",
+    "path": "folders/Extensions/Chatterbox/Getters.yy",
   },
   "resourceVersion": "1.0",
   "name": "ChatterboxGetContent",

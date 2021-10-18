@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Console",
-    "path": "folders/Console.yy",
+    "path": "folders/Extensions/Console.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_console",

@@ -128,7 +128,7 @@
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",
-    "path": "folders/Console/Unsorted/IDE components/Fonts.yy",
+    "path": "folders/Extensions/Console/Unsorted/IDE components/Fonts.yy",
   },
   "resourceVersion": "1.0",
   "name": "fnt_debug6x",

@@ -54,13 +54,6 @@ if enabled and array_length(line_queue) != 0 and line_index < array_length(line_
 				char_delay = 5
 			}
 			
-			if char == "\n"
-			{
-				show_debug_message(stitch(
-					line_index,"   (AST = ",char_delay==5,")   ","newlines ",newlines,"   newline_1 ",newline_1,"   newline_2 ",newline_2
-				))
-			}
-			
 			if char_prev == "\n"
 			{
 				dot_text += "\n"

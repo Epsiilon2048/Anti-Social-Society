@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Graphical elements",
-    "path": "folders/Console/Graphical elements.yy",
+    "path": "folders/Extensions/Console/Graphical elements.yy",
   },
   "resourceVersion": "1.0",
   "name": "Console_bar",
