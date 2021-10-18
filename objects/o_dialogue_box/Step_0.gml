@@ -3,12 +3,16 @@ enabled_last = enabled
 
 if enabled and array_length(line_queue) != 0 and line_index < array_length(line_queue)
 {	
-	if button_charskip or button_skip
+	var skipping = false
+	if (button_charskip or button_skip) and not box_finished
 	{
 		text = line_queue[line_index].text
 		box_finished = true
 		text_charindex = string_length(text)+1
+		dot_text += "\n"+(newline_1 ? "*" : "")
+		dot_text += "\n"+(newline_2 ? "*" : "")
 	}
+	else if button_skip skipping = true
 	else if timer-- <= 0
 	{	
 		var _text = line_queue[line_index].text
@@ -53,7 +57,7 @@ if enabled and array_length(line_queue) != 0 and line_index < array_length(line_
 			if char == "\n"
 			{
 				show_debug_message(stitch(
-					random(1),"   (AST = ",char_delay==5,")   ","newlines ",newlines,"   newline_1 ",newline_1,"   newline_2 ",newline_2
+					line_index,"   (AST = ",char_delay==5,")   ","newlines ",newlines,"   newline_1 ",newline_1,"   newline_2 ",newline_2
 				))
 			}
 			
@@ -66,16 +70,16 @@ if enabled and array_length(line_queue) != 0 and line_index < array_length(line_
 				}
 				newlines++
 			}
+			
+			char_prev = char
 		}
 		if added_text audio_play_sound(voice, 0, 0)
 	
 		timer = char_delay
-		
-		char_prev = char
 	}
 }
 
-if box_finished and (button_next or button_skip)
+if box_finished and (button_next or skipping)
 {
 	box_finished = false
 	text = ""
@@ -89,5 +93,12 @@ if box_finished and (button_next or button_skip)
 		enabled = false
 		monster_talking = noone
 	}
-	else if button_skip text = line_queue[line_index].text
+	else if skipping 
+	{
+		text = line_queue[line_index].text
+		box_finished = true
+		text_charindex = string_length(text)+1
+		dot_text += "\n"+(line_queue[line_index].newline_1 ? "*" : "")
+		dot_text += "\n"+(line_queue[line_index].newline_2 ? "*" : "")
+	}
 }

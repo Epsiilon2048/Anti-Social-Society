@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Effects",
+    "path": "folders/Scripts/Effects.yy",
   },
   "resourceVersion": "1.0",
   "name": "room_fadeto",

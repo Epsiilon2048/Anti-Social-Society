@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Dialogue.yy",
   },
   "resourceVersion": "1.0",
-  "name": "format_dialogue_line",
+  "name": "line_meta",
   "tags": [],
   "resourceType": "GMScript",
 }

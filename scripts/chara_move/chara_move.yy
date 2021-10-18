@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Movement",
+    "path": "folders/Scripts/Movement.yy",
   },
   "resourceVersion": "1.0",
   "name": "chara_move",

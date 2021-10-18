@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Dialogue",
+    "path": "folders/Scripts/Dialogue.yy",
   },
   "resourceVersion": "1.0",
   "name": "say",

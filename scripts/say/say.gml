@@ -18,7 +18,7 @@ var has_content = false
 
 for(var i = 0; i <= array_length(lines)-1; i++)
 {
-	lines[i] = format_dialogue_line(lines[i], sprite_exists(sprite))
+	lines[i] = format_dialogue_line(lines[i], sprite)
 	
 	if lines[i].text != "" has_content = true
 }
