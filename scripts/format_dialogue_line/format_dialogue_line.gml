@@ -1,6 +1,7 @@
 function format_dialogue_line(text, has_sprite){
 	
 draw_set_font(fnt_dialogue)
+static spw = string_width(" ")/alpha_char_width
 	
 text = string_replace_all(text, " ", "  ")
 
@@ -47,30 +48,10 @@ for(var i = 1; i <= string_length(text); i++)
 		else if newlines == 2 newline_2 = true
 	}
 	
-	if char == "'" and string_lettersdigits(char_next) != ""
+	if string_pos(char, ".,'(")
 	{
-		newtext += "' "
-		current_ln += string_width(" ")/alpha_char_width
-	}
-	else if char == "."
-	{
-		newtext += ". "
-		current_ln += string_width("  ")/alpha_char_width
-	}
-	else if char == "("
-	{
-		newtext += "( "
-		current_ln += string_width("  ")/alpha_char_width
-	}
-	else if char == ")"
-	{
-		newtext += " )"
-		current_ln += string_width("  ")/alpha_char_width
-	}
-	else if string_pos(char, ",!?") and char_next == " "
-	{
-		newtext += char+"  "
-		current_ln += string_width("  ")/alpha_char_width
+		newtext += char+" "
+		current_ln += spw
 	}
 	else newtext += char
 	
