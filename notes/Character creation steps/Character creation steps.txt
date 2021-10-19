@@ -1,0 +1,34 @@
+
+Notes
+- Sprites and metadata are gathered automatically using rigid naming conventions specified below
+- It is mandatory that each character have at least one resting sprite - otherwise they will be defaulted
+  to the chara placeholder. Otherwise, missing sprites are automatically substituted.
+
+1. Add to initialize_characters script: <name> = new Character("<name>")
+
+2. Create group with character name
+
+3. Create child object from o_monster, named mons_<name> (the naming convention here is optional at the 
+   moment)
+
+4. Add sprites under subgroups and set their origin to bottom center (varying per sprite)
+	a. Stand
+		A. s_<name>_front
+		B. s_<name>_back
+		C. s_<name>_left
+		D. s_<name>_right
+	b. Walk
+		A. s_<name>_front_walk
+		B. s_<name>_back_walk
+		C. s_<name>_left_walk
+		D. s_<name>_right_walk
+	c. Talk
+		A. s_<name>_talk
+		   (...)
+	d. Misc
+		   (...)
+
+5. Set the framerate of the front_walk sprite to the desired default steps per frame at walking speed 
+   (NOT fps or fpgf) - for reference, the default chara animations are 7 steps per frame (roughly 4.3 fps)
+
+6. Add voice, named snd_<name>_voice (opt.)

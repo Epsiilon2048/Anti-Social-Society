@@ -1,7 +1,7 @@
 
 draw_self()
 
-if o_chara.draw_bbox
+if instance_exists(o_chara) and o_chara.draw_bbox
 {
 	draw_set_color(c_red)
 	draw_set_alpha(.5)

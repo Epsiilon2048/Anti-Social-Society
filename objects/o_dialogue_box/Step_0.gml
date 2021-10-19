@@ -4,13 +4,12 @@ enabled_last = enabled
 if enabled and array_length(line_queue) != 0 and line_index < array_length(line_queue)
 {	
 	var skipping = false
-	if (button_charskip or button_skip) and not box_finished
+	if (button_charskip or button_skip) and not box_finished and text != ""
 	{
 		text = line_queue[line_index].text
 		box_finished = true
 		text_charindex = string_length(text)+1
-		dot_text += "\n"+(newline_1 ? "*" : "")
-		dot_text += "\n"+(newline_2 ? "*" : "")
+		dot_text = "*"+"\n"+(newline_1 ? "*" : "")+"\n"+(newline_2 ? "*" : "")
 	}
 	else if button_skip skipping = true
 	else if timer-- <= 0
@@ -91,7 +90,6 @@ if box_finished and (button_next or skipping)
 		text = line_queue[line_index].text
 		box_finished = true
 		text_charindex = string_length(text)+1
-		dot_text += "\n"+(line_queue[line_index].newline_1 ? "*" : "")
-		dot_text += "\n"+(line_queue[line_index].newline_2 ? "*" : "")
+		dot_text = "*"+"\n"+(line_queue[line_index].newline_1 ? "*" : "")+"\n"+(line_queue[line_index].newline_2 ? "*" : "")
 	}
 }

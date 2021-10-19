@@ -32,7 +32,7 @@ if not o_dialogue_box.enabled and (button_left or button_up or button_right or b
 	
 	image_index = old_image_index
 }
-else if walking and frame_counter == FRAME_STEPS
+else if walking and frame_counter == chara.walk_anim_speed
 {
 	walking = false
 	frame_counter = 0
@@ -42,7 +42,7 @@ else if walking and frame_counter == FRAME_STEPS
 	image_index = old_image_index
 }
 
-if walking and frame_counter++ == FRAME_STEPS
+if walking and frame_counter++ == chara.walk_anim_speed
 {
 	image_index ++
 	frame_counter = 0

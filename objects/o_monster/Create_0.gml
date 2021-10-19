@@ -9,7 +9,6 @@ line_index = 0
 lines = []
 repeat_lines = ""
 
-FRAME_STEPS = 7
 SPIN_STEPS = 7
 PACE_SPD = 2
 
@@ -55,7 +54,7 @@ states.spinleft = function(){
 
 states.pace = function(){
 	
-	if frame_counter++ >= FRAME_STEPS * (walk_speed/PACE_SPD)
+	if frame_counter++ >= chara.walk_anim_speed * (walk_speed/PACE_SPD)
 	{
 		frame_counter = 0
 		image_index ++

@@ -5,21 +5,11 @@
 
 if instance_number(self) > 1 {instance_destroy() exit}
 
-chara = new Character("chara")
-rudy = new Character("rudy")
-spooky = new Character("spooky")
-kelly = new Character("kelly")
-toxy = new Character("toxy")
-rem = new Character("rem")
-marbles = new Character("marbles")
-vink = new Character("vink")
-seapunk = new Character("seapunk")
-snurk = new Character("snurk")
-ari = new Character("ari")
-
 draw_interactive_boxes = true
 
 master_state = undefined
 
 last_room = room_init
 room_goto(room_start)
+
+chara_warned = false
