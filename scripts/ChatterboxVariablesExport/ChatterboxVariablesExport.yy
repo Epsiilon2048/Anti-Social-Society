@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Variables",
-    "path": "folders/Chatterbox/Variables.yy",
+    "path": "folders/Extensions/Chatterbox/Variables.yy",
   },
   "resourceVersion": "1.0",
   "name": "ChatterboxVariablesExport",

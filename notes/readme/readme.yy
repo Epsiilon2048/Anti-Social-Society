@@ -1,7 +1,7 @@
 {
   "parent": {
     "name": "Unsorted",
-    "path": "folders/Console/Unsorted.yy",
+    "path": "folders/Extensions/Console/Unsorted.yy",
   },
   "resourceVersion": "1.1",
   "name": "readme",

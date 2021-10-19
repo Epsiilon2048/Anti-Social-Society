@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Console",
-    "path": "folders/Console.yy",
+    "name": "Graphical elements",
+    "path": "folders/Extensions/Console/Graphical elements.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Script87",
+  "name": "Console_ctx_menu",
   "tags": [],
   "resourceType": "GMScript",
 }

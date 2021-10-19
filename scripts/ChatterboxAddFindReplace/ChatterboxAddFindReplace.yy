@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Setup",
-    "path": "folders/Chatterbox/Setup.yy",
+    "path": "folders/Extensions/Chatterbox/Setup.yy",
   },
   "resourceVersion": "1.0",
   "name": "ChatterboxAddFindReplace",
