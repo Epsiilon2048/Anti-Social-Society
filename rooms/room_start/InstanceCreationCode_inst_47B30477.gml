@@ -1,3 +1,3 @@
 
-lines = [["Oh, nocki?", "Yeah, I don't really like her.", "She's got dem tiddies tho","No she doesn't, what?"]]
-repeat_lines = ["blegh"]
+lines = [["if your reading this your gay","yes, your, not you're"]]
+repeat_lines = "your (posessive) gay (object)"
