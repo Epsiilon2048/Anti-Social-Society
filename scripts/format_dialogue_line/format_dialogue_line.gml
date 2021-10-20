@@ -65,7 +65,6 @@ for(var i = 1; i <= string_length(meta.text); i++)
 
 if newlines > 2 show_debug_message("Dialogue exceeds max height!")
 
-show_debug_message(text_meta)
 meta.text = newtext
 meta.newline_1 = newline_1
 meta.newline_2 = newline_2
