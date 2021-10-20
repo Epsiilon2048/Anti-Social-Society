@@ -37,6 +37,7 @@
     {"id":{"name":"ChatterboxAddFindReplace","path":"scripts/ChatterboxAddFindReplace/ChatterboxAddFindReplace.yy",},"order":0,},
     {"id":{"name":"IsChatterbox","path":"scripts/IsChatterbox/IsChatterbox.yy",},"order":8,},
     {"id":{"name":"common_commands","path":"scripts/common_commands/common_commands.yy",},"order":7,},
+    {"id":{"name":"s_toriel_livingroom","path":"sprites/s_toriel_livingroom/s_toriel_livingroom.yy",},"order":12,},
     {"id":{"name":"common_variable_utilities","path":"scripts/common_variable_utilities/common_variable_utilities.yy",},"order":7,},
     {"id":{"name":"draw_rectangle_outline","path":"scripts/draw_rectangle_outline/draw_rectangle_outline.yy",},"order":18,},
     {"id":{"name":"ChatterboxGetVisited","path":"scripts/ChatterboxGetVisited/ChatterboxGetVisited.yy",},"order":10,},
@@ -177,6 +178,7 @@
     {"id":{"name":"autofill_in_list","path":"scripts/autofill_in_list/autofill_in_list.yy",},"order":4,},
     {"id":{"name":"ChatterboxIsStopped","path":"scripts/ChatterboxIsStopped/ChatterboxIsStopped.yy",},"order":2,},
     {"id":{"name":"line_meta","path":"scripts/line_meta/line_meta.yy",},"order":3,},
+    {"id":{"name":"room_toriel_livingroom","path":"rooms/room_toriel_livingroom/room_toriel_livingroom.yy",},"order":5,},
     {"id":{"name":"draw_autofill_list","path":"scripts/draw_autofill_list/draw_autofill_list.yy",},"order":15,},
     {"id":{"name":"Console_color_picker","path":"scripts/Console_color_picker/Console_color_picker.yy",},"order":6,},
     {"id":{"name":"turned_left","path":"scripts/turned_left/turned_left.yy",},"order":3,},
@@ -274,6 +276,7 @@
     {"roomId":{"name":"room_leftwing","path":"rooms/room_leftwing/room_leftwing.yy",},},
     {"roomId":{"name":"room_upstairs","path":"rooms/room_upstairs/room_upstairs.yy",},},
     {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
+    {"roomId":{"name":"room_toriel_livingroom","path":"rooms/room_toriel_livingroom/room_toriel_livingroom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Rooms.yy","order":1,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
