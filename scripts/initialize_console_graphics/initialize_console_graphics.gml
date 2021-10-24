@@ -91,7 +91,6 @@ with SCROLLBAR {
 with BAR {
 	
 	enabled = false
-	docked = false
 	
 	char_height = 23
 	

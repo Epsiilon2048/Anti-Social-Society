@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Console",
-    "path": "folders/Extensions/Console.yy",
+    "name": "Initialization",
+    "path": "folders/Extensions/Console/Initialization.yy",
   },
   "resourceVersion": "1.0",
   "name": "initialize_console_graphics",

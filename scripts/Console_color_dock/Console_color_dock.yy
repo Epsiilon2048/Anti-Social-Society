@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Graphical elements",
-    "path": "folders/Extensions/Console/Graphical elements.yy",
+    "name": "Docks",
+    "path": "folders/Extensions/Console/Docks.yy",
   },
   "resourceVersion": "1.0",
   "name": "Console_color_dock",
