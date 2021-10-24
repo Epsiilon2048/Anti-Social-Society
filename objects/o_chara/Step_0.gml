@@ -37,9 +37,24 @@ else if walking and frame_counter == chara.walk_anim_speed
 	walking = false
 	frame_counter = 0
 	
-	var old_image_index = image_index
-	sprite_index = sprite_same_direction(chara, sprite_index, "")
-	image_index = old_image_index
+	sprite_index_switch(sprite_same_direction(chara, sprite_index, ""))
+}
+
+
+if walking and not moved
+{
+	var s = sprite_index
+	
+	if button_left			s = chara.left
+	else if button_right	s = chara.right
+	else if button_up		s = chara.back
+	else if button_down		s = chara.front
+	
+	var same_direction = sprite_same_direction(chara, sprite_index, "")
+	if (sprite_index != same_direction and frame_counter == chara.walk_anim_speed) or s != same_direction
+	{
+		sprite_index_switch(s)
+	}
 }
 
 if walking and frame_counter++ == chara.walk_anim_speed
@@ -47,16 +62,8 @@ if walking and frame_counter++ == chara.walk_anim_speed
 	image_index ++
 	frame_counter = 0
 	
-	if not moved
-	{
-		var old_image_index = image_index
-		if button_up			sprite_index = chara.back
-		else if button_down		sprite_index = chara.front
-		if button_left			sprite_index = chara.left
-		else if button_right	sprite_index = chara.right	
-		image_index = old_image_index
-	}
 }
+
 
 switch sprite_get_direction(sprite_index)
 {

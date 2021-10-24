@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Sprite.yy",
   },
   "resourceVersion": "1.0",
-  "name": "turned_right",
+  "name": "sprite_get_type",
   "tags": [],
   "resourceType": "GMScript",
 }

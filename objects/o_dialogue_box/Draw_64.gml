@@ -6,7 +6,7 @@ var sc = window_scale // A macro for a macro!! (oh god i almost named the variab
 if enabled
 {
 	// hmu
-	var is_top = o_chara.y > 160
+	var is_top = instance_exists(o_chara) and o_chara.y > 160
 	var top = (is_top ? 7 : 160)*sc
 	var bottom = (is_top ? 84 : 236)*sc
 	

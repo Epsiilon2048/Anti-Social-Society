@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Other.yy",
   },
   "resourceVersion": "1.0",
-  "name": "window_resize",
+  "name": "window_functions",
   "tags": [],
   "resourceType": "GMScript",
 }

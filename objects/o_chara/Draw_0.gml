@@ -1,7 +1,10 @@
 
 if init
 {
-	sprite_index = chara.front
+	if		button_up		sprite_index = chara.back
+	else if	button_left		sprite_index = chara.left
+	else if	button_right	sprite_index = chara.right
+	else					sprite_index = chara.front
 	init = false
 }
 

@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Sprite.yy",
   },
   "resourceVersion": "1.0",
-  "name": "turned_right",
+  "name": "sprite_index_switch",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Sprite",
-    "path": "folders/Scripts/Sprite.yy",
+    "name": "Controls",
+    "path": "folders/Scripts/Controls.yy",
   },
   "resourceVersion": "1.0",
-  "name": "turned_right",
+  "name": "Button",
   "tags": [],
   "resourceType": "GMScript",
 }
