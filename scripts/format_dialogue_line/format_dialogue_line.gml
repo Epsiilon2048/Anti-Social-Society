@@ -10,7 +10,7 @@ struct_add(meta, text_meta)
 draw_set_font(fnt_dialogue)
 static spw = string_width(" ")/alpha_char_width
 
-var line_length = sprite_exists(sprite) ? dialogue_line_sprite_length : dialogue_line_length
+var line_length = sprite_exists(meta.sprite) ? dialogue_line_sprite_length : dialogue_line_length
 var newtext = ""
 var current_ln = 0
 var newlines = 0

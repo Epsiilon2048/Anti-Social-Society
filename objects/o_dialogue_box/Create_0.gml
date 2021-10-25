@@ -39,3 +39,7 @@ button_charskip = false
 button_skip = false
 
 monster_talking = noone
+
+//ChatterboxLoadFromFile("dialogue.yarn")
+//chatter = ChatterboxCreate("dialogue.yarn")
+//show_message(ChatterboxJump(chatter, "Start"))

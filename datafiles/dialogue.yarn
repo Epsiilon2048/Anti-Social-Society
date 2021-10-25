@@ -1,7 +1,12 @@
-title: Start
-tags: 
-colorID: 0
-position: 825,348
----
-Empty Text
-===
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "Hello!\n<<set am_i_cool_yet to 1>>\nHey, uh are you there?\nI'm testing out this cool new yarn thing!\n",
+		"position": {
+			"x": 714,
+			"y": 278
+		},
+		"colorID": 0
+	}
+]
