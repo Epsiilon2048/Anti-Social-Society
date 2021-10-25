@@ -12,7 +12,7 @@ if enabled and array_length(line_queue) != 0 and line_index < array_length(line_
 		dot_text = "*"+"\n"+(newline_1 ? "*" : "")+"\n"+(newline_2 ? "*" : "")
 	}
 	else if button_skip skipping = true
-	else if timer-- <= 0
+	else if timer-- <= 0 and wait_timer <= 0
 	{	
 		var _text = line_queue[line_index].text
 		newline_1 = line_queue[line_index].newline_1
@@ -66,9 +66,11 @@ if enabled and array_length(line_queue) != 0 and line_index < array_length(line_
 			char_prev = char
 		}
 		if added_text and voice != -1 audio_play_sound(voice, 0, 0)
-	
-		timer = char_delay
+		
+		timer = max(delay_factor, char_delay*(delay_factor+1))
 	}
+	
+	if wait_timer wait_timer--
 }
 
 if box_finished and (button_next or skipping)
@@ -78,6 +80,7 @@ if box_finished and (button_next or skipping)
 	dot_text = "*"
 	text_charindex = 1
 	timer = 0
+	wait_timer = 0
 	newlines = 0
 	
 	if ++line_index >= array_length(line_queue)

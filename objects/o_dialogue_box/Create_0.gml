@@ -15,6 +15,9 @@ sep = 9
 
 char_delay = 0
 timer = 0
+wait_timer = 0
+
+delay_factor = 0
 
 text = ""
 text_charindex = 1

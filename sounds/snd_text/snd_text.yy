@@ -13,8 +13,8 @@
   "soundFile": "snd_text.ogg",
   "duration": 0.064,
   "parent": {
-    "name": "Voices",
-    "path": "folders/Audio/Voices.yy",
+    "name": "Audio",
+    "path": "folders/Audio.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_text",
