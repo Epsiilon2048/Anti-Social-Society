@@ -1,12 +1,11 @@
-[
-	{
-		"title": "Start",
-		"tags": "",
-		"body": "Hello!\n<<set am_i_cool_yet to 1>>\nHey, uh are you there?\nI'm testing out this cool new yarn thing!\n",
-		"position": {
-			"x": 714,
-			"y": 278
-		},
-		"colorID": 0
-	}
-]
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 667,300
+__PrivCrochet_tags: 
+title: Start
+---
+Yarn: Hello there
+<<set $a to 1>>
+Didn't [c 9900ff] see [c] you there~!
+My name's yarn.......
+===
