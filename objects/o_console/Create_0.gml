@@ -61,13 +61,20 @@ mouse_char_pos = false
 
 elements = ds_create(ds_type_list, "elements")
 
-macro_list = -1
-method_list = -1
-asset_list = -1
+method_list = ds_create(ds_type_list, "method_list")
+asset_list = ds_create(ds_type_list, "asset_list")
 instance_variables = []
 scope_variables = []
-lite_suggestions = -1
+lite_suggestions = ds_create(ds_type_list, "lite_suggestions")
 suggestions = -1
+
+command_log = ds_create(ds_type_list, "command_log")
+error_log = ds_create(ds_type_list, "error_log")
+
+command_order = ds_create(ds_type_list, "command_order")
+suggestions = ds_create(ds_type_list, "suggestions")
+macro_list = ds_create(ds_type_list, "macro_list")
+commands = ds_create(ds_type_map, "commands")
 
 console_macros = {}
 
@@ -160,8 +167,6 @@ inst_selecting_name = ""
 instance_cursor = false
 
 color_string = []
-command_log = ds_create(ds_type_list, "command_log")
-error_log = ds_create(ds_type_list, "error_log")
 
 command_colors = true
 
@@ -172,8 +177,6 @@ O4 = ""
 O5 = ""
 
 cs_template = cs_greenbeans
-
-command_order = -1
 
 startup = -1
 initialized = false

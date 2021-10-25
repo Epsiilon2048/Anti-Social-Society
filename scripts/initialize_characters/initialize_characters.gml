@@ -13,5 +13,6 @@ seapunk = new Character("seapunk")
 snurk = new Character("snurk")
 ari = new Character("ari")
 tekk = new Character("tekk")
+mikey = new Character("mikey")
 
 }

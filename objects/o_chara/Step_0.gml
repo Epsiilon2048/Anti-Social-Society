@@ -5,8 +5,8 @@ spd = SPD
 
 if not o_dialogue_box.enabled
 {
-	moved = (button_left or button_right) and not chara_move((button_right-button_left)*spd, true)
-	moved = (button_down or button_up) and not chara_move((button_down-button_up)*spd, false) or moved
+	moved = (button_down or button_up) and not chara_move((button_down-button_up)*spd, false)
+	moved = (button_left or button_right) and not chara_move((button_right-button_left)*spd, true) or moved
 	
 	if button_left and button_right and not (button_up or button_down) moved = false
 	if button_up and button_down and not (button_left or button_right) moved = false

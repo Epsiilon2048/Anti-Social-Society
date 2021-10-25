@@ -5,7 +5,7 @@
 
 if instance_number(self) > 1 {instance_destroy() exit}
 
-draw_interactive_boxes = true
+draw_interactive_boxes = false
 
 master_state = undefined
 

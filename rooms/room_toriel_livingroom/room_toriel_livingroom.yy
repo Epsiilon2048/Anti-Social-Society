@@ -16,6 +16,7 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"o_chara","path":"objects/o_chara/o_chara.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":157.0,"y":196.0,"resourceVersion":"1.0","name":"inst_434ABE37","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"mons_rudy","path":"objects/mons_rudy/mons_rudy.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":216.0,"y":171.0,"resourceVersion":"1.0","name":"inst_53BA00ED","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"mons_mikey","path":"objects/mons_mikey/mons_mikey.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":418.0,"y":183.0,"resourceVersion":"1.0","name":"inst_31FE8FD","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"o_collision","path":"objects/o_collision/o_collision.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-45.0,"scaleX":12.25,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":497.0,"y":138.0,"resourceVersion":"1.0","name":"inst_3371A017","tags":[],"resourceType":"GMRInstance",},
@@ -89,6 +90,7 @@
     {"name":"inst_159E5CFB","path":"rooms/room_toriel_livingroom/room_toriel_livingroom.yy",},
     {"name":"inst_484FF1E3","path":"rooms/room_toriel_livingroom/room_toriel_livingroom.yy",},
     {"name":"inst_41F464F1","path":"rooms/room_toriel_livingroom/room_toriel_livingroom.yy",},
+    {"name":"inst_31FE8FD","path":"rooms/room_toriel_livingroom/room_toriel_livingroom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

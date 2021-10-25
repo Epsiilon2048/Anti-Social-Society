@@ -10,8 +10,12 @@ Notes
 
 3. Create child object from o_monster, named mons_<name> (the naming convention here is optional at the 
    moment)
+   
+4. Set the create event code to:
+   event_inherited()
+   chara = global.characters.<name>
 
-4. Add sprites under subgroups and set their origin to bottom center (varying per sprite)
+5. Add sprites under subgroups and set their origin to bottom center (varying per sprite)
 	a. Stand
 		A. s_<name>_front
 		B. s_<name>_back
@@ -28,7 +32,7 @@ Notes
 	d. Misc
 		   (...)
 
-5. Set the framerate of the front_walk sprite to the desired default steps per frame at walking speed 
+6. Set the framerate of the front_walk sprite to the desired default steps per frame at walking speed 
    (NOT fps or fpgf) - for reference, the default chara animations are 7 steps per frame (roughly 4.3 fps)
 
-6. Add voice, named snd_<name>_voice (opt.)
+7. Add voice, named snd_<name>_voice (opt.)
