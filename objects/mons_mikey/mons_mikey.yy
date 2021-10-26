@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "s_mikey_front",
-    "path": "sprites/s_mikey_front/s_mikey_front.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
