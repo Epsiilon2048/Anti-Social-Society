@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"s_mikey_left","path":"sprites/s_mikey_left/s_mikey_left.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "s_mikey_left",
     "tags": [],
     "resourceType": "GMSequence",

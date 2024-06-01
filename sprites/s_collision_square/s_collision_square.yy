@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"s_collision_square","path":"sprites/s_collision_square/s_collision_square.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "s_collision_square",
     "tags": [],
     "resourceType": "GMSequence",

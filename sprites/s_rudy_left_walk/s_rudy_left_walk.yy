@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"s_rudy_left_walk","path":"sprites/s_rudy_left_walk/s_rudy_left_walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "s_rudy_left_walk",
     "tags": [],
     "resourceType": "GMSequence",

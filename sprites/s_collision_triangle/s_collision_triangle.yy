@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"s_collision_triangle","path":"sprites/s_collision_triangle/s_collision_triangle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "s_collision_triangle",
     "tags": [],
     "resourceType": "GMSequence",
